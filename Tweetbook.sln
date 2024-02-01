@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook", "Tweetbook.csproj", "{C3B0770C-4800-43A1-84C7-363C0417A3BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook", "Tweetbook\Tweetbook.csproj", "{C3B0770C-4800-43A1-84C7-363C0417A3BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.IntegrationTests", "..\Tweetbook.IntegrationTests\Tweetbook.IntegrationTests.csproj", "{FD952010-C4CF-43D0-BF10-95DF5FF82BD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.IntegrationTests", "Tweetbook.IntegrationTests\Tweetbook.IntegrationTests.csproj", "{FD952010-C4CF-43D0-BF10-95DF5FF82BD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweetbook.Sdk", "..\Tweetbook.sdk\Tweetbook.Sdk.csproj", "{E99D873B-86D4-4F95-B94D-2C9D1215CD84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.Sdk", "Tweetbook.sdk\Tweetbook.Sdk.csproj", "{E99D873B-86D4-4F95-B94D-2C9D1215CD84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweetbook.Sdk.Sample", "..\Tweetbook.Sdk.Sample\Tweetbook.Sdk.Sample.csproj", "{B6041775-1BAD-41F3-99AB-FC632872842D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.Sdk.Sample", "Tweetbook.Sdk.Sample\Tweetbook.Sdk.Sample.csproj", "{B6041775-1BAD-41F3-99AB-FC632872842D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweetbook.Contracts", "..\Tweetbook.Contracts\Tweetbook.Contracts.csproj", "{77762E15-538D-4239-B474-15737244ECC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.Contracts", "Tweetbook.Contracts\Tweetbook.Contracts.csproj", "{77762E15-538D-4239-B474-15737244ECC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
