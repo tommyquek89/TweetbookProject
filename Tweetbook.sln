@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook", "Tweetbook\Twee
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.IntegrationTests", "Tweetbook.IntegrationTests\Tweetbook.IntegrationTests.csproj", "{FD952010-C4CF-43D0-BF10-95DF5FF82BD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.Sdk", "Tweetbook.sdk\Tweetbook.Sdk.csproj", "{E99D873B-86D4-4F95-B94D-2C9D1215CD84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.Sdk", "Tweetbook.Sdk\Tweetbook.Sdk.csproj", "{E99D873B-86D4-4F95-B94D-2C9D1215CD84}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweetbook.Sdk.Sample", "Tweetbook.Sdk.Sample\Tweetbook.Sdk.Sample.csproj", "{B6041775-1BAD-41F3-99AB-FC632872842D}"
 EndProject
