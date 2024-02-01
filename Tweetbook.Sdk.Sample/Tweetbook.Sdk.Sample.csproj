@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tweetbook.sdk\Tweetbook.Sdk.csproj" />
+    <PackageReference Include="Refit" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tweetbook.Contracts\Tweetbook.Contracts.csproj" />
+    <ProjectReference Include="..\Tweetbook.Sdk\Tweetbook.Sdk.csproj" />
   </ItemGroup>
 
 </Project>
