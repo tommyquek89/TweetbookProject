@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Tweetbook.Contracts.V1;
@@ -27,6 +28,7 @@ namespace Tweetbook.IntegrationTests
 
             // Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
+            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             (await response.Content.ReadAsAsync<PagedResponse<PostResponse>>()).Data.Should().BeEmpty();
         }
 
@@ -46,6 +48,7 @@ namespace Tweetbook.IntegrationTests
 
             // Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
+            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             var returnedPost = await response.Content.ReadAsAsync<Response<PostResponse>>();
             returnedPost.Data.Id.Should().Be(createdPost.Id);
             returnedPost.Data.Name.Should().Be("Test post");

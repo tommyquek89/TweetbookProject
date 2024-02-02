@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Tweetbook.Data;
@@ -12,7 +10,6 @@ using Tweetbook.Contracts.V1.Requests;
 using Tweetbook.Contracts.V1.Responses;
 using Tweetbook.Contracts.V1;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 
 namespace Tweetbook.IntegrationTests
@@ -60,6 +57,7 @@ namespace Tweetbook.IntegrationTests
         protected async Task<PostResponse> CreatePostAsync(CreatePostRequest request)
         {
             var response = await TestClient.PostAsJsonAsync(ApiRoutes.Posts.Create, request);
+            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             return (await response.Content.ReadAsAsync<Response<PostResponse>>()).Data;
         }
 
