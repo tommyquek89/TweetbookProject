@@ -62,7 +62,7 @@ namespace Tweetbook.Services
             }
 
             //await _userManager.AddClaimAsync(newUser, new Claim("tags.view", "true"));
-            //await _userManager.AddToRoleAsync(newUser, "Poster");
+            await _userManager.AddToRoleAsync(newUser, "POSTER");
 
             return await GenerateAuthenticationResultForUserAsync(newUser);
         }

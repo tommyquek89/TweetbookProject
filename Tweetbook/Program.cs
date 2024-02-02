@@ -28,15 +28,15 @@ namespace Tweetbook
 
                 var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-                if(!await roleManager.RoleExistsAsync("Admin"))
+                if(!await roleManager.RoleExistsAsync("ADMIN"))
                 {
-                    var adminRole = new IdentityRole("Admin");
+                    var adminRole = new IdentityRole("ADMIN");
                     await roleManager.CreateAsync(adminRole);
                 }
 
-                if (!await roleManager.RoleExistsAsync("Poster"))
+                if (!await roleManager.RoleExistsAsync("POSTER"))
                 {
-                    var posterRole = new IdentityRole("Poster");
+                    var posterRole = new IdentityRole("POSTER");
                     await roleManager.CreateAsync(posterRole);
                 }
             }
