@@ -70,7 +70,7 @@ namespace Tweetbook.IntegrationTests
                 Email = "test@integration.com",
                 Password = "SomePass1234!"
             });
-
+            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             var registrationResponse = await response.Content.ReadAsAsync<AuthSuccessResponse>();
             return registrationResponse.Token;
         }

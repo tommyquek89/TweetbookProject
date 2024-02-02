@@ -21,6 +21,7 @@ using static Tweetbook.Contracts.V1.ApiRoutes;
 namespace Tweetbook.Controllers.V1
 {
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Produces("application/json")]
     public class PostsController : Controller
     {
         private readonly IPostService _postService;
